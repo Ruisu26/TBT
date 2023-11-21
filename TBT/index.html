@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book is on the Table</title>
+    <link rel="icon" type="image/png" href="assets/Logo (Personalizado).png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Finanças</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Terror</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Suspense</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ficção</a>
+                </li>
+            </ul>
+            <img src="assets/Logo (Personalizado).png" alt="Logo da AluraBooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">The book</b> is on the Table</h1>
+        </div>
+
+        <ul class="opcoes">
+            <input class="opcoes__botao" type="checkbox" id="opcoes-menu">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Finanças</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Terror</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Suspense</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ficção</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha Estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="assets/Favoritos.svg" alt="Meus Favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="assets/Compras.svg" alt="Sacola de Compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="assets/Usuario.svg" alt="Meu Perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante sua próxima leitura!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Últimos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/Adeus_Aposentadoria.jpg" alt="Livro Adeus, aposentadoria: Como garantir seu futuro sem depender dos outros"></div>
+                    <div class="swiper-slide"><img src="assets/Volta_em_80.jpg" alt="Livro Volta ao mundo em 80 dias de Júlio Verne"></div>
+                    <div class="swiper-slide"><img src="assets/O_Fantasma_Opera.jpg" alt="Livro O Fantasma da Ópera de Gaston Leroux"></div>
+                    <div class="swiper-slide"><img src="assets/Sapiens.jpg" alt="Livro Sapiens, Uma breve história da humanidade de Yuval Noah"></div>
+                    <div class="swiper-slide"><img src="assets/Sherlock_Holmes.jpg" alt="Box de livros do Sherlock Holmes de Artur Conan Doyle"></div>
+                    <div class="swiper-slide"><img src="assets/Revolucao_dos_Bichos.jpg" alt="Livro A revolução dos bichos de George Orwel"></div>
+                    ...
+                </div>
+        
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1° linha -->
+                <div class="card__descricao">
+                    <!-- 1° coluna -->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__titulo-livro">Adeus, Aposentadoria</h2>
+                        <p class="descricao__texto">Esqueça tudo o que você já ouviu falar sobre aposentadoria. A ideia de parar de trabalhar e se sustentar com um auxílio mensal é um conceito ultrapassado para dar conta do padrão de vida que queremos ter.</p>
+                    </div>
+                    <!-- 2° coluna -->
+                    <img class="descricao__imagem" src="assets/Adeus_Aposentadoria (Personalizado).jpg">
+                </div>
+
+                <!-- 2° linha -->
+                <div class="card__botoes">
+                    <!-- 1° coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item"> <a href="#"><img src="assets/Favoritos.svg" alt="Favoritar livro"></a></li>
+                        <li class="botoes__item"> <a href="#"><img src="assets/Compras.svg" alt="Adicionar ao carrinho de compras"></a></li>
+                    </ul>
+                    <!-- 2° coluna -->
+                    <a href="#" class="botao__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/Adeus_Aposentadoria.jpg" alt="Livro Adeus, aposentadoria: Como garantir seu futuro sem depender dos outros"></div>
+                    <div class="swiper-slide"><img src="assets/Volta_em_80.jpg" alt="Livro Volta ao mundo em 80 dias de Júlio Verne"></div>
+                    <div class="swiper-slide"><img src="assets/O_Fantasma_Opera.jpg" alt="Livro O Fantasma da Ópera de Gaston Leroux"></div>
+                    <div class="swiper-slide"><img src="assets/Sapiens.jpg" alt="Livro Sapiens, Uma breve história da humanidade de Yuval Noah"></div>
+                    <div class="swiper-slide"><img src="assets/Sherlock_Holmes.jpg" alt="Box de livros do Sherlock Holmes de Artur Conan Doyle"></div>
+                    <div class="swiper-slide"><img src="assets/Revolucao_dos_Bichos.jpg" alt="Livro A revolução dos bichos de George Orwel"></div>
+                    ...
+                </div>
+        
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1° linha -->
+                <div class="card__descricao">
+                    <!-- 1° coluna -->
+                    <div class="descricao">
+                        <img src="assets/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="descricao__titulo">Autor do Mês</h3>
+                        <h2 class="descricao__titulo-livro">Gustavo Cerbasi</h2>
+                        <p class="descricao__texto">Escritor, consultor financeiro, professor, palestrante e administrador brasileiro.</p>
+                    </div>
+                    <!-- 2° coluna -->
+                    <img class="descricao__imagem" src="assets/Escritor (Personalizado).jpg">
+                </div>
+
+                <!-- 2° linha -->
+                <div class="card__botoes">
+                    <!-- 1° coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item"> <a href="#"><img src="assets/Favoritos.svg" alt="Favoritar livro"></a></li>
+                        <li class="botoes__item"> <a href="#"><img src="assets/Compras.svg" alt="Adicionar ao carrinho de compras"></a></li>
+                    </ul>
+                    <!-- 2° coluna -->
+                    <a href="#" class="botao__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Finanças</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Terror</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Gótico</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Fantasia</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Ficção</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Suspense</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Fantasia</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Não Ficção</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input class="contato__email" type="email" placeholder="Cadastre seu e-mail">
+    </section>
+
+    <hr/>
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo 3°C</h2>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Alunos</li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Enzo Gurski</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Guilherme Vinicius</a>
+            </li>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">João Augusto</a>
+            </li>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Luis Felipe</a>
+            </li>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Rhalf</a>
+            </li>
+        </ul>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+      });</script>
+</body>
+</html>
